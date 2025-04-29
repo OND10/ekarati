@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/apartment",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Apartment\\": "app/",
+            "Modules\\Apartment\\Database\\Factories\\": "database/factories/",
+            "Modules\\Apartment\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Apartment\\Tests\\": "tests/"
+        }
+    }
+}
