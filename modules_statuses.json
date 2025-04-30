@@ -1,3 +1,5 @@
 {
-    "Apartment": true
+    "Apartment": true,
+    "User": true,
+    "CommonService": true
 }
