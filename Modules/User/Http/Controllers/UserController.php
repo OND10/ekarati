@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Log;
 use Modules\User\Http\Requests\SigninRequest;
 use Modules\User\Http\Requests\SignUpRequest;
 use Modules\User\Http\Requests\UpdateProfileRequest;
-use Modules\User\Interfaces\UserServiceInterface;
 use Modules\User\Services\UserService;
 
 class UserController extends Controller
@@ -18,7 +17,7 @@ class UserController extends Controller
 
     private $user_service;
 
-    public function __construct(UserServiceInterface $userService)
+    public function __construct(UserService $userService)
     {
         $this->user_service = $userService;
     }
